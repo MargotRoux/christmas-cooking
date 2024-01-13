@@ -1,0 +1,507 @@
+// Specific CSS for your home-page
+
+.img-banner img {
+  height: 600px;
+}
+
+.img-banner2 img {
+  height: 215px;
+  margin-left: 272px;
+  margin-top: 90px;
+}
+
+.header {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.header .div {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 839px;
+  position: relative;
+}
+
+.header .overlap-group {
+  position: absolute;
+  width: 187px;
+  height: 58px;
+  top: 40px;
+  left: 1183px;
+  background-color: $red;
+  border-radius: 50px;
+}
+
+
+
+.header .text-wrapper {
+  position: absolute;
+  top: 17px;
+  left: 60px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: $green;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.header .frame {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  top: 47px;
+  left: 68px;
+}
+
+.header .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.88px;
+  font-family: "Faktum Test-Bold", Helvetica;
+  font-weight: 700;
+  color: $green;
+  font-size: 35.2px;
+  letter-spacing: -1.41px;
+  line-height: normal;
+}
+
+.header .navbar {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+  position: absolute;
+  top: 57px;
+  left: 501px;
+}
+
+.header .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: $green;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.header .overlap {
+  position: absolute;
+  width: 1267px;
+  height: 578px;
+  top: 52px;
+  left: 100px;
+}
+
+.header .btn-christmas {
+  position: absolute;
+  width: 235px;
+  height: 66px;
+  top: 421px;
+  left: 0;
+  background-color: $red;
+  color: #fff!important;
+  border-radius: 50px;
+}
+
+.header .btn-christmas:hover {
+  background-color: $green;
+}
+
+.header .text-wrapper-4 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  margin-left: -15px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.header .p {
+  position: absolute;
+  width: 458px;
+  top: 57px;
+  font-family: "Faktum Test-Bold", Helvetica;
+  font-weight: 700;
+  color: $green;
+  font-size: 70.1px;
+  letter-spacing: -2.8px;
+  line-height: 63.1px;
+}
+
+.header .img-banner {
+  position: absolute;
+  width: 770px;
+  height: 578px;
+  top: 0;
+  left: 497px;
+  object-fit: cover;
+}
+
+.header .header-description {
+  position: absolute;
+  width: 488px;
+  top: 380px;
+  left: 100px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #4b5371;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+}
+
+.header .text-wrapper-5 {
+  position: absolute;
+  top: 568px;
+  left: 292px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: $green;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.header .text-wrapper-6 {
+  position: absolute;
+  top: 538px;
+  left: 292px;
+  font-family: "Faktum Test-Bold", Helvetica;
+  font-weight: 700;
+  color: $green;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: 28px;
+  white-space: nowrap;
+}
+
+.header .text-wrapper-7 {
+  position: absolute;
+  top: 492px;
+  left: 362px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: $green;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.header .text-wrapper-7:hover {
+  color:$red;
+}
+
+.header .avatars-header {
+  position: absolute;
+  width: 155px;
+  height: 73px;
+  top: 493px;
+  left: 100px;
+}
+
+.header .img-1 img {
+  left: 0;
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 35px;
+  object-fit: cover;
+}
+
+.header .img-2 img {
+  left: 38px;
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 35px;
+  object-fit: cover;
+}
+
+.header .img-3 img {
+  left: 82px;
+  position: absolute;
+  width: 73px;
+  height: 73px;
+  top: 35px;
+  object-fit: cover;
+}
+
+/* Centrer titre */
+.recettes-text-center {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  font-family: "Faktum Test-Bold", Helvetica;
+  font-weight: 700;
+  color: $green;
+  font-size: 50px;
+}
+
+
+.container .banner-text-center {
+  display: flex;
+  justify-content: center;
+  font-family: "Faktum Test-Bold", Helvetica;
+  font-weight: 700;
+  color: $green;
+  font-size: 50px;
+}
+
+/* banner */
+.banner {
+  padding: 70px;
+  margin-bottom: 80px;
+}
+
+/* Menu défilant */
+.scrolling-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: auto;
+  white-space: nowrap;
+
+.menu-item {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid $red;
+    border-radius: 5px;
+    color: $red;
+
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+.menu-item:hover {
+  background-color: $red;
+  color: #fff;
+  }
+}
+
+.btn-all-tools {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+
+}
+
+.btn-all-tools a {
+
+  width: 235px;
+  height: 66px;
+  background-color: $red;
+  color: #fff !important;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.btn-all-tools a:hover {
+  background-color: $green;
+}
+
+.btn-primary {
+  background-color: $red;
+  color: #fff !important;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
+  padding-left: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 60px;
+}
+
+.btn-primary:hover {
+  background-color: $green;
+}
+
+/* Encart index */
+
+.box {
+  width: 1512px;
+  height: 342px;
+}
+
+.box .group {
+  width: 1518px;
+  height: 342px;
+  top: 0;
+  left: 0;
+}
+
+.box .overlap-group {
+  position: relative;
+  width: 1512px;
+  height: 342px;
+  background-color: $green;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.box .overlap-group2 {
+  position: relative;
+  width: 1512px;
+  height: 342px;
+  background-color: $green;
+  margin-top: 0px;
+  margin-bottom: 150px;
+}
+
+.box .overlap-group3 {
+  position: relative;
+  width: 1512px;
+  height: 342px;
+  background-color: $green;
+}
+
+.box .overlap {
+  position: absolute;
+  width: 538px;
+  height: 118px;
+  top: 91px;
+  left: 712px;
+}
+
+.box .text-wrapper {
+  position: absolute;
+  width: 538px;
+  height: 77px;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: $red;
+  font-size: 35px;
+  letter-spacing: -0.35px;
+  line-height: normal;
+}
+
+.box .text-wrapper2 {
+  position: absolute;
+  width: 538px;
+  height: 77px;
+  top: 0;
+  left: 0;
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: -0.35px;
+  line-height: normal;
+}
+
+.box .div {
+  position: absolute;
+  width: 538px;
+  height: 53px;
+  top: 65px;
+  left: 0;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  line-height: normal;
+}
+
+.box .div2 {
+  position: absolute;
+  width: 538px;
+  height: 53px;
+  top: 65px;
+  left: 0;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #fff;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  line-height: normal;
+}
+
+.box .text-wrapper-2 {
+  position: absolute;
+  left: 712px;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  position: absolute;
+  width: 235px;
+  padding: 20px;
+  top: 386px;
+  background-color: $red;
+  color: #fff !important;
+  border-radius: 50px;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -182px;
+  text-decoration: none;
+}
+
+.box .text-wrapper-2:hover {
+  background-color: $green;
+}
+
+.box .img-index {
+  position: absolute;
+  width: 203px;
+  height: 146px;
+  top: 106px;
+  left: 372px;
+  object-fit: cover;
+}
+
+.card-trip img {
+  filter: brightness(65%);
+}
+
+.text-wrapper-10 {
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  padding: 20px;
+  background-color: $red;
+  color: #fff !important;
+  border-radius: 50px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  margin-top: -100px;
+}
+
+.text-wrapper-10:hover {
+  background-color: $green;
+}
+
+.btn-voir-recettes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:100px;
+}

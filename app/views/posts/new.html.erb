@@ -1,0 +1,24 @@
+<% if @post.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
+    <ul>
+      <% @post.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="container-form">
+  <h1 class="title-form">Partagez la magie des Fêtes<br> avec votre recette festive favorite !</h1>
+  <%= simple_form_for @post, url: posts_path, data: { turbo: false } do |f| %>
+    <%= f.input :title, label: 'Titre' %>
+    <%= f.input :description, label: 'Description' %>
+    <%= f.input :ingredients, label: 'Ingrédients' %>
+    <%= f.input :difficulty, collection: ['Facile', 'Moyen', 'Difficile'] %>
+    <%= f.input :preparation_time, label: 'Temps de préparation (en minutes)' %>
+    <%= f.input :image_url, label: 'Url' %>
+    <%= f.input :photo, as: :file %>
+    <%= f.button :submit, 'Publier ma recette', class: 'btn-publish-new-recipe' %>
+  <% end %>
+</div>

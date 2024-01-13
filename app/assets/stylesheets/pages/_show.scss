@@ -1,0 +1,96 @@
+.container-show {
+  background-color: white;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding:100px;
+}
+
+.title-show {
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 700;
+  color: $red;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-auteur-post-show {
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 600;
+  color: $green;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.image-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+/* Commentaires */
+
+.container-comment {
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding:100px;
+}
+
+.title-comment {
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 600;
+  color: $green;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-comment {
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  padding: 20px;
+  background-color: $green;
+  color: #fff !important;
+  border-radius: 50px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+.btn-comment:hover {
+  background-color: $red;
+}
+
+.title-comment-community {
+  font-family: "Montserrat-Bold", Helvetica;
+  font-weight: 600;
+  color: $green;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.comments-section {
+  border-radius: 15px;
+  padding: 25px;
+  background-color: rgba(15, 72, 15, 0.082);
+}
+
+.container-community-review {
+  background-color: white;
+  margin-right: 100px;
+}
+
+.comment-content {
+  font-size: 17px;
+  font-weight: 600;
+}

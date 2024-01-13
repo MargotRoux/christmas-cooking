@@ -1,0 +1,42 @@
+<div class="box">
+  <div class="group">
+    <div class="overlap-group3">
+      <div class="overlap">
+        <p class="text-wrapper">Toutes les recettes de noël</p>
+        <p class="div">Célébrez la magie des fêtes avec des saveurs qui réchauffent le cœur et éveillent les sens. Découvrez des recettes traditionnelles et innovantes pour faire de votre table de Noël un véritable festin de joie et de partage. De l'entrée au dessert, laissez-vous emporter par l'esprit festif et créez des souvenirs inoubliables.</p>
+      </div>
+      <%= link_to "", class: "img-banner2" do %>
+        <%= image_tag "santa.png" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-sm-8 my-3">
+    <%= form_with url: posts_path, method: :get, class: "d-flex" do %>
+      <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Type a keyword" %>
+      <%= submit_tag "Search", name: "", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+
+<div class="cards">
+  <% @posts.each do |post| %>
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="card-trip">
+          <%= image_tag post.photo, width: 600 if post.photo.attached? %>
+          <div class="card-trip-infos">
+            <div>
+              <h2><%= link_to post.title, post_path(post) %></h2>
+              <p><%= post.description.truncate(150) %></p>
+              <p class="text-auteur-post">Publié par : <%= post.user.nickname %></p>
+            </div>
+            <h2 class="card-trip-pricing">⏳ <%= post.preparation_time %> minutes</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

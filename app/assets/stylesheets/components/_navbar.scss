@@ -1,0 +1,55 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 90px;
+  margin-left: 100px;
+}
+
+.btn-menu-login {
+  color: #fff;
+  background-color: $red;
+  padding: 13px 29px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  margin-right: 100px;
+  border:none;
+}
+
+.btn-menu-login:hover {
+  background-color: $green;
+  text-decoration: none;
+}
+
+#navbarSupportedContent > ul > li > a:hover {
+  color: white;
+}
+
+.nav-link {
+  color: #fff;
+  background-color: $red;
+  padding: 13px 29px;
+  border-radius: 50px;
+  font-weight: lighter;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  margin-right: 30px;
+  border:none;
+}
+
+.nav-link:hover {
+  background-color: $green;
+  text-decoration: none;
+}
+
+.nav-item .avatar {
+  margin-right: 60px;
+}

@@ -1,0 +1,66 @@
+<div class="header">
+  <div class="div">
+    <div class="overlap">
+      <div class="btn-christmas">
+        <%= link_to "Publier ma recette", new_post_path, class: "text-wrapper-4" %>
+      </div>
+      <p class="p">Des idées de recettes pour vos fêtes de fin d’année</p>
+
+      <%= link_to "", class: "img-banner" do %>
+        <%= image_tag "banner.png" %>
+      <% end %>
+    </div>
+    <p class="header-description">
+      Les meilleurs recettes de la communauté pour un noël gourmand ✨
+    </p>
+    <%= link_to "Voir toutes les recettes", posts_path, class: "text-wrapper-7" %>
+  </div>
+</div>
+
+<div class="background-homepage">
+  <div class="recettes-text-center">
+    <p>Les meilleurs recettes</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-sm-8 my-3">
+      <%= form_with url: posts_path, method: :get, class: "d-flex" do %>
+        <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Type a keyword" %>
+        <%= submit_tag "Search", name: "", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="scrolling-wrapper">
+    <div class="menu-item">🍰 Dessert festif</div>
+    <div class="menu-item">🤶🏻 Repas de mère noël</div>
+    <div class="menu-item">✌🏻 Recettes faciles</div>
+    <div class="menu-item">👧🏾 Recettes pour enfants</div>
+    <div class="menu-item">💰 Petit budget</div>
+    <div class="menu-item">🎄 Amuse-bouches</div>
+  </div>
+
+  <div class="cards">
+    <% @posts.each do |post| %>
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="card-trip">
+            <%= image_tag post.photo if post.photo.attached? %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= link_to post.title, post_path(post) %></h2>
+                <p><%= post.description.truncate(150) %></p>
+                <p class="text-auteur-post">Publié par : <%= post.user.nickname %></p>
+              </div>
+              <h2 class="card-trip-pricing">⏳ <%= post.preparation_time %> minutes</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="btn-voir-recettes">
+    <%= link_to "Voir toutes les recettes", posts_path, class: "text-wrapper-10" %>
+  </div>
+</div>

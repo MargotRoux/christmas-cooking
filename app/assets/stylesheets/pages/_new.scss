@@ -1,0 +1,41 @@
+.container-form {
+  background-color: white;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding:100px;
+}
+
+.title-form {
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $green;
+}
+
+.form-control {
+  border-radius: 10px 0px 0px 10px;
+  border-color: $green;
+}
+
+.btn-publish-new-recipe {
+  font-family: "Montserrat-Medium", Helvetica;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  padding: 20px;
+  background-color: $red;
+  color: #fff !important;
+  border-radius: 50px;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+.btn-publish-new-recipe:hover {
+  background-color: $green;
+}

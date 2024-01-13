@@ -1,0 +1,53 @@
+<div class="container-show">
+  <h1 class="title-show"><%= @post.title %></h1>
+  <p class="text-auteur-post-show">Publié par : <%= @post.user.nickname %></p>
+  <div class="image-show">
+    <%= image_tag @post.photo, width: 600 if @post.photo.attached? %>
+  </div>
+  <p><%= @post.description %></p>
+  <ul><li><%= @post.ingredients %></li></ul>
+  <p>⏳ Temps de préparation : <%= @post.preparation_time %> minutes</p>
+  <p>🧑🏻‍🍳 Difficulté : <%= @post.difficulty %></p>
+  <p>👉🏻 Url : <%= link_to @post.image_url, @post.image_url, target: '_blank' %></p>
+
+</div>
+
+
+<div class="row align-items-center">
+      <div class="col">
+        <div class="container-comment">
+          <p class="title-comment">🤔 Un avis sur cette recette ? 💬</p>
+            <%= simple_form_for([@post, @post.comments.build]) do |f| %>
+            <%= f.input :content, as: :text, input_html: { rows: 5 } %>
+            <%= f.button :submit, 'Publier le commentaire', class: 'btn-comment' %>
+            <% end %>
+
+
+  <h2 class="title-comment-community">Découvre les avis de la communauté :</h2>
+
+
+  <% if @post.comments.any? %>
+    <div class="comments-section">
+      <% @post.comments.each do |comment| %>
+        <div class="comment">
+          <p class="comment-content"><em><%= comment.content %></em></p>
+          <% if comment.user.present? %>
+            <p>Écrit par: <%= comment.user.nickname %></p>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  <% else %>
+    <p>Aucun commentaires pour le moment, soyez le premier à donner votre avis !</p>
+  <% end %>
+</div>
+
+
+
+<div class="btn-voir-recettes">
+  <%= link_to "Voir d'autres recettes", posts_path, class: "text-wrapper-10" %>
+</div>
+</div>
+</div>
+</div>
+</div>
